@@ -1,0 +1,9 @@
+--10.ödev
+select city, country from city 
+left join country on city.country_id = country.country_id;
+
+select  first_name, last_name,payment_id from payment 
+right join customer on payment.customer_id = customer.customer_id ;
+
+select rental_id, first_name, last_name from customer 
+full join rental  on customer.customer_id = rental.customer_id;
